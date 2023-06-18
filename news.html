@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e75765fa73.js" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+    .section{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/*------------------------------------*\
+	Footer
+\*------------------------------------*/
+
+#bottom-footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #EBEBEB;
+}
+
+/* -- Footer Logo -- */
+.footer-logo  .logo {
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.footer-logo  .logo > img {
+	max-height:30px;
+}
+
+/* -- Footer Nav -- */
+.footer-nav {
+	text-align: right;
+	padding: 20px 0px;
+}
+
+.footer-nav li {
+	display:inline-block;
+	margin-left:15px
+}
+
+.footer-nav li a {
+	display:block;
+	text-transform:uppercase;
+	-webkit-transition:0.2s color;
+	transition:0.2s color;
+}
+
+.footer-nav li a:hover , .footer-nav li a:focus {
+	color:#FF6700;
+}
+
+.footer-nav li a:after {
+	content:"";
+	display:block;
+	height:2px;
+	background-color:#FF6700;
+	width:100%;
+	-webkit-transform: translateY(5px);
+	    -ms-transform: translateY(5px);
+	        transform: translateY(5px);
+	opacity:0;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.footer-nav li a:hover:after , .footer-nav li a:focus:after {
+	-webkit-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	        transform: translateY(0px);
+	opacity:1;
+}
+
+/* -- Footer copyright -- */
+.footer-copyright {
+	line-height:40px;
+}
+
+/* -- Footer Social -- */
+.footer-social {
+	text-align:right;
+}
+
+.footer-social li {
+	display:inline-block;
+	margin-left:10px;
+}
+
+.footer-social li a {
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:50%;
+	color:#FFF;
+	background-color:#EBEBEB;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+
+.footer-social li a.facebook {
+	background-color:#3b5998;
+}
+
+.footer-social li a.twitter {
+	background-color:#55acee;
+}
+
+.footer-social li a.google-plus {
+	background-color:#dd4b39;
+}
+
+.footer-social li a.instagram {
+	background-color:#e95950;
+}
+
+.footer-social li a.youtube {
+	background-color:#ff0000;
+}
+
+.footer-social li a.linkedin {
+	background-color:#007bb5;}
+
+    .row row-cols-1 row-cols-md-3 g-4{
+    padding-top: 30px;
+    }
+    .col{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+ </style>
+ </head>
+ <body style="background-color: rgb(226, 8, 62);">
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ 
+
+ <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+ <div class="container-fluid">
+       <a class="navbar-brand" href="index.html">
+           <img src="./img/logo1.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+         </a>
+     
+         <ul class="nav nav-underline" >
+           <li class="nav-item">
+             <a class="nav-link " aria-current="page" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="contactus.html">contact Us</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="motivation.html">Motivation</a>
+           </li>
+           
+         </ul>
+   </div>
+   
+ </nav>
+
+<br>
+ <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/russian.jpeg" height="350" class="card-img-top" alt="Russian">
+        <div class="card-body">
+          <h5 class="card-title">Russia accuses Australia of ''Russophobic hysteria'' for blocking second embassy on security grounds
+            Russia accuses Australia of ''Russophobic hysteria'' for blocking second embassy on security grounds</h5>
+          <p class="card-text"> "Australia, having cancelled the lease agreement for the site for the construction of the new Russian Embassy building, diligently continues to move forward in the main stream of the authors of the Russophobic hysteria and tries to distinguish itself on this path," Kremlin spokesperson Dmitry Peskov is quoted as saying.</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 3 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/submarine.jpeg" height="350" class="card-img-top" alt="submarine">
+        <div class="card-body">
+          <h5 class="card-title">US nuclear submarine arrives in South Korea, a day after North Korea resumes its missile tests
+            US nuclear submarine arrives in South Korea, a day after North Korea resumes its missile tests</h5>
+          <p class="card-text">The United States deployed a nuclear-powered submarine capable of carrying about 150 Tomahawk missiles to South Korea on Friday, a day after North Korea resumed missile tests in protest of the U.S.-South Korean live-fire drills.(AP)  
+                    </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 15 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/shinde.jpeg" height="350" class="card-img-top" alt="shinde">
+        <div class="card-body">
+          <h5 class="card-title">CM Eknath Shinde condemns decision of the Karnataka govt to remove chapter on VD Savarkar from textbook</h5>
+          <p class="card-text">Pune (Maharashtra) June 16 (ANI): Maharashtra Chief Minister Eknath Shinde on June 16 condemned the decision taken by the Congress-led Karnataka government over removing a chapter on Vinayak Damodar Savarkar from the school textbook. CM Eknath Shinde said, “Savarkar and Hegdevar are very important personalities. The effort taken by Savarkar to make India free is unforgettable. It is unfortunate. This is condemnable.”</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 20 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--1st half-->
+
+<br>
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/joe Biden_ 'I Think I Could Have' Been President If I Ran.jpeg" height="350" class="card-img-top" alt="Russian">
+        <div class="card-body">
+          <h5 class="card-title">$930 million in grants announced in Biden's effort to expand internet access to every home in the US
+            $930 million in grants announced in Biden's effort to expand internet access to every home in the US</h5>
+          <p class="card-text"> The grants were set in motion by the $65 billion allocated by Congress for broadband as part of the $1 trillion infrastructure measure Biden, a Democrat, signed into law in 2021. Most of that money, $42.5 billion, will be distributed to states as part of the Broadband Equity, Access and Deployment, or BEAD, programme partly based on new federal maps id</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 25 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/bank of Japan.jpeg" height="350" class="card-img-top" alt="submarine">
+        <div class="card-body">
+          <h5 class="card-title">Bank of Japan sticks to ultra-loose monetary policy
+            Bank of Japan sticks to ultra-loose monetary policy</h5>
+          <p class="card-text">They left the bank's negative interest rate in place and did not adjust the band in which rates for 10-year government bonds fluctuate. The announcement prompted the Japanese currency to sink to around 141.39 yen per dollar in the afternoon, from 140.20 yen in the morning.  
+                    </p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 30 mins ago</small>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="./img/programming.png"  height="350" class="card-img-top" alt="shinde">
+        <div class="card-body">
+          <h5 class="card-title">Man files suit against Facebook and receives Rs 41 lakh in damages after his account was locked</h5>
+          <p class="card-text">After denying him access to his account, a man from Georgia, US, won a court case against Facebook, and the tech giant was forced to pay him $50,000 (Rs 40.94 lakh). According to a report, Jason Crawford sued Facebook after his account was suspended without cause and the social media giant refused to work with</p>
+        </div>
+        <div class="card-footer">
+          <small class="text-body-secondary">Last updated 40 mins ago</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--2nd -->
+  <br>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/cheers.jpeg" height="350" class="card-img-top" alt="Russian">
+          <div class="card-body">
+            <h5 class="card-title">
+              Colombian children become symbol of survival: AP reports
+Colombian children become symbol of survival: AP reports</h5>
+            <p class="card-text"> The weary Indigenous men gathered at their base camp, nestled among towering trees and dense vegetation that form a disorienting sea of green. They sensed that their ancestral land — Selva Madre, or Mother Jungle — was unwilling to let them find the four children who'd been missing since their charter plane</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 1 hour ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/wikiwand - Rishi Sunak.png" height="350" class="card-img-top" alt="submarine">
+          <div class="card-body">
+            <h5 class="card-title">UK PM Rishi Sunak joins raid on illegal migrants, 105 arrested
+              UK PM Rishi Sunak joins raid on illegal migrants, 105 arrested</h5>
+            <p class="card-text">UK Prime Minister Rishi Sunak recently joined the country’s Home Office enforcement officials in Brent, north London, as part of the government's campaign against illegal migrant workers. The operation resulted in the arrest of 105 foreign nationals from at least 20 nationalities for working without appropriate visa rights. UK Home Secretary Suella Braverma
+                      </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 2 hours ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./img/kovacic.jpeg"  height="350" class="card-img-top" alt="shinde">
+          <div class="card-body">
+            <h5 class="card-title">Manchester city going to sign kovacic from chelsea.</h5>
+            <p class="card-text">EXCL: Manchester City have opened concrete talks to sign Mateo Kovacic in the summer. Positive discussions took place with player’s camp in the last few days over personal terms 🚨🔵 #MCFC</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 1 day ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 	<!-- Footer -->
+     <footer id="footer" class="section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- footer logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <a class="logo" href="index.html">
+                            <img src="./img/ost.png" alt="logo" height="500">
+                        </a>
+                    </div>
+                </div>
+                <!-- footer logo -->
+
+                <!-- footer nav -->
+                <div class="col-md-6">
+                    <ul class="footer-nav">
+                        <li><a href="index.html" style="color: #0c0a0c;">Home</a></li>
+                        <li><a href="contactus.html" style="color: #0c0a0c;">contact Us</a></li>
+                        <li><a href="motivation.html" style="color: #0c0a0c;">Motivation</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- /footer nav -->
+
+            </div>
+            <!-- /row -->
+
+            <!-- row -->
+            <div id="bottom-footer" class="row">
+
+                
+
+            
+            </div>
+            <!-- row -->
+
+        </div>
+        <!-- /container -->
+
+    </footer>
+    <!-- /Footer -->
+</body>
+</html>

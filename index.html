@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e75765fa73.js" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+ 
+ .feature{
+align-items: center;
+text-align: center;
+ }
+.section{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/*------------------------------------*\
+	Footer
+\*------------------------------------*/
+
+#bottom-footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #EBEBEB;
+}
+
+/* -- Footer Logo -- */
+.footer-logo  .logo {
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.footer-logo  .logo > img {
+	max-height:30px;
+}
+
+/* -- Footer Nav -- */
+.footer-nav {
+	text-align: right;
+	padding: 20px 0px;
+}
+
+.footer-nav li {
+	display:inline-block;
+	margin-left:15px
+}
+
+.footer-nav li a {
+	display:block;
+	text-transform:uppercase;
+	-webkit-transition:0.2s color;
+	transition:0.2s color;
+}
+
+.footer-nav li a:hover , .footer-nav li a:focus {
+	color:#FF6700;
+}
+
+.footer-nav li a:after {
+	content:"";
+	display:block;
+	height:2px;
+	background-color:#FF6700;
+	width:100%;
+	-webkit-transform: translateY(5px);
+	    -ms-transform: translateY(5px);
+	        transform: translateY(5px);
+	opacity:0;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.footer-nav li a:hover:after , .footer-nav li a:focus:after {
+	-webkit-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	        transform: translateY(0px);
+	opacity:1;
+}
+
+/* -- Footer copyright -- */
+.footer-copyright {
+	line-height:40px;
+}
+
+/* -- Footer Social -- */
+.footer-social {
+	text-align:right;
+}
+
+.footer-social li {
+	display:inline-block;
+	margin-left:10px;
+}
+
+.footer-social li a {
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:50%;
+	color:#FFF;
+	background-color:#EBEBEB;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+
+.footer-social li a.facebook {
+	background-color:#3b5998;
+}
+
+.footer-social li a.twitter {
+	background-color:#55acee;
+}
+
+.footer-social li a.google-plus {
+	background-color:#dd4b39;
+}
+
+.footer-social li a.instagram {
+	background-color:#e95950;
+}
+
+.footer-social li a.youtube {
+	background-color:#ff0000;
+}
+
+.footer-social li a.linkedin {
+	background-color:#007bb5;
+}
+.couple{
+  background-color: #0ae7d5;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+  
+}
+
+.couplee1{
+  background-color: #eb2387;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+.couplee2{
+  background-color: #f50c20;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+
+button {
+ --color: #560bad;
+ font-family: inherit;
+ display: inline-block;
+ width: 8em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+}
+
+button:before {
+ content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+
+button:hover {
+ color: #fff;
+}
+
+button:before {
+ top: 100%;
+ left: 100%;
+ transition: all .7s;
+}
+
+button:hover:before {
+ top: -30px;
+ left: -30px;
+}
+
+button:active:before {
+ background: #3a0ca3;
+ transition: background 0s;
+}
+
+.para{
+  -webkit-text-fill-color: #cbf207;
+}
+.para1{
+  -webkit-text-fill-color: #EBEBEB;
+}
+</style>
+</head>
+  <body style="background-color: rgb(226, 8, 62);">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  
+
+  <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+  <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="./img/logo1.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+          </a>
+      
+          <ul class="nav nav-underline" >
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="contactus.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="motivation.html">Motivation</a>
+            </li>
+            
+          </ul>
+    </div>
+    
+  </nav>
+
+	<!-- About -->
+  <div id="about" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="section-header">
+            <h2 class="text-white">Welcome to OST</h2>
+            <p class="text-white">Here To Help You Out.</p>
+          </div>
+
+          <!-- feature -->
+          <div class="featur">
+            <i class="fa-solid fa-newspaper fa-bounce fa-2xl" style="color: #cbf207;"></i>
+            
+            <div class="feature-content">
+              <h4 class="text-white">News feed </h4>
+              <p class="text-white">Get Latest News around the world. .</p>
+            </div>
+          </div>
+          <!-- /feature -->
+
+          <!-- feature -->
+          <div class="featur">
+            <i class="fa-solid fa-rocket fa-bounce fa-2xl" style="color: #cbf207;"></i>
+            <div class="feature-content">
+              <h4 class="text-white">Updates on upcoming events</h4>
+              <p class="text-white">Get Updates on upcoming events.</p>
+            </div>
+          </div>
+          <!-- /feature -->
+
+          <!-- feature -->
+          <div class="featur">
+            <i class="fa-solid fa-user-doctor fa-bounce fa-2xl" style="color: #cbf207;"></i>
+
+            <div class="feature-content">
+              <h4 class="text-white">Jobs</h4>
+              <p class="text-white">Get Job related information.</p>
+            </div>
+          </div>
+          <!-- /feature -->
+
+        </div>
+
+        <div class="col-md-6">
+          <div class="about-img">
+            <img src="./img/og.JPEG" alt="OG Pic" height="500" width="500">
+          </div>
+        </div>
+
+      </div>
+      <!-- row -->
+
+    </div>
+    <!-- container -->
+  </div>
+  <!-- /About -->
+
+
+<!--Slant blocks1-->
+<div class="couple">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-7">
+           <div class="titlepage text_align_left">
+              <h1>News Feed</h1>
+              <h5>Get the latest News around the world.</h5>
+              <p style="font-size: larger;">Keeping up with current events lets you know what is going on around the world, and therefore lets you learn about different cultures. News stories teach you what is acceptable in some cultures and what is not. They also teach you how different daily life in other cultures can be.</p>
+              <button> 
+                <a href="news.html" style="color:#0c0a0c;" style="text-decoration: none;">Get News</a>
+              </button>  
+           </div>
+        </div>
+        <div class="col-md-5">
+           <div class="doi">
+              <figure><img src="img/breaking news.jpeg"height="400"  width="500" alt="fig1"/></figure>
+           </div>
+        </div>
+     </div>
+  </div>
+</div> 
+<!--End Slant blocks1-->
+
+
+
+<!--Slant blocks2-->
+<div class="couplee1">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-7">
+           <div class="titlepage text_align_left">
+              <h1 style="color: #cbf207;">Updates on upcoming events</h1>
+              <h5 style="color: #cbf207;">Get Updates on upcoming events.</h5>
+              <div class="para">
+              <p style="font-size: larger;" style="color: #cbf207;">Get all latest & breaking news on Upcoming Events. Watch videos, top stories and articles on Upcoming Events at OST.com</p>
+              <button> 
+                <a href="updates.html" style="color:hsl(61, 90%, 30%);" style="text-decoration: none;">Get Updates</a>
+              </button>  
+            </div>
+           </div>
+        </div>
+        <div class="col-md-5">
+           <div class="doi">
+              <figure><img src="img/updates ann.png"height="400"  width="500" alt="fig1"/></figure>
+           </div>
+        </div>
+     </div>
+  </div>
+</div> 
+<!--End Slant blocks2-->
+
+
+<!--Slant blocks3-->
+<div class="couplee2">
+  <div class="container-fluid">
+     <div class="row">
+        <div class="col-md-7">
+           <div class="titlepage text_align_left">
+              <h1 style="color: #EBEBEB;">Jobs</h1>
+              <h5 style="color: #EBEBEB;">Get Job related information.</h5>
+              <div class="para1">
+              <p style="font-size: larger;">Having a good job may add many benefits to your life, as it may allow you to live comfortably and provide stability for yourself and your family. A job can be important, as finding fulfillment in work can be important to our overall well-being. In this article, we discuss why having a job is so important, the benefits of working, how to determine whether your current job is right for you and how to find a position that can help you feel fulfille.</p>
+              <button> 
+                <a href="jobs.html" style="color:#000000;" style="text-decoration: none;">Get Jobs</a>
+              </button>  
+              </div>
+           </div>
+        </div>
+        <div class="col-md-5">
+           <div class="doi">
+              <figure><img src="img/job bar.jpeg"height="400"  width="500" alt="fig1"/></figure>
+           </div>
+        </div>
+     </div>
+  </div>
+</div> 
+<!--End Slant blocks3-->
+
+
+
+  <!-- WHy needed with symbols-->>
+
+  <div id="why-us" class="section">
+
+    <!-- container -->
+    <div class="container">
+
+      <!-- row -->
+      <div class="row">
+        <div class="section-header text-center">
+          <h2 class="text-white">Why OST</h2>
+          <p class="text-white">Here Providing best Services.</p>
+        </div>
+
+        <!-- feature -->
+        <div class="col-md-4">
+          <div class="feature">
+          
+            <img src="./img/news.png" height="100">
+            <div class="feature-content">
+              <h4 class="text-white">News Feed</h4>
+              <p class="text-white"> Get Latest News around the world.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /feature -->
+
+        <!-- feature -->
+        <div class="col-md-4">
+          <div class="feature">
+            <img src="./img/updates1.png" height="100">
+            <div class="feature-content">
+              <h4 class="text-white">Updates on upcoming events</h4>
+              <p class="text-white">Get Updates on upcoming events.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /feature -->
+
+        <!-- feature -->
+        <div class="col-md-4">
+          <div class="feature">
+            <img src="./img/job.png" height="100">
+            <div class="feature-content">
+              <h4 class="text-white">Jobs</h4>
+              <p class="text-white">Get Job related information.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /feature -->
+
+      </div>
+
+      <!-- WHy needed with symbols-->>
+       
+
+		<!-- Footer -->
+		<footer id="footer" class="section">
+
+			<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+				<div class="row">
+
+					<!-- footer logo -->
+					<div class="col-md-6">
+						<div class="footer-logo">
+							<a class="logo" href="index.html">
+								<img src="./img/ost.png" alt="logo" height="500">
+							</a>
+						</div>
+					</div>
+					<!-- footer logo -->
+
+					<!-- footer nav -->
+					<div class="col-md-6">
+						<ul class="footer-nav">
+							<li><a href="index.html" style="color: #0c0a0c;">Home</a></li>
+							<li><a href="contactus.html" style="color: #0c0a0c;">Contact Us</a></li>
+							<li><a href="motivation.html" style="color: #0c0a0c;">Motivation</a></li>
+							
+						</ul>
+					</div>
+					<!-- /footer nav -->
+
+				</div>
+				<!-- /row -->
+
+				<!-- row -->
+				<div id="bottom-footer" class="row">
+
+					
+
+				
+				</div>
+				<!-- row -->
+
+			</div>
+			<!-- /container -->
+
+		</footer>
+		<!-- /Footer -->
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/e75765fa73.js" crossorigin="anonymous"></script>
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+    .section{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+/*------------------------------------*\
+	Footer
+\*------------------------------------*/
+
+#bottom-footer {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-top: 1px solid #EBEBEB;
+}
+
+/* -- Footer Logo -- */
+.footer-logo  .logo {
+	margin-top: 20px;
+	display: inline-block;
+}
+
+.footer-logo  .logo > img {
+	max-height:30px;
+}
+
+/* -- Footer Nav -- */
+.footer-nav {
+	text-align: right;
+	padding: 20px 0px;
+}
+
+.footer-nav li {
+	display:inline-block;
+	margin-left:15px
+}
+
+.footer-nav li a {
+	display:block;
+	text-transform:uppercase;
+	-webkit-transition:0.2s color;
+	transition:0.2s color;
+}
+
+.footer-nav li a:hover , .footer-nav li a:focus {
+	color:#FF6700;
+}
+
+.footer-nav li a:after {
+	content:"";
+	display:block;
+	height:2px;
+	background-color:#FF6700;
+	width:100%;
+	-webkit-transform: translateY(5px);
+	    -ms-transform: translateY(5px);
+	        transform: translateY(5px);
+	opacity:0;
+	-webkit-transition:0.2s all;
+	transition:0.2s all;
+}
+
+.footer-nav li a:hover:after , .footer-nav li a:focus:after {
+	-webkit-transform: translateY(0px);
+	    -ms-transform: translateY(0px);
+	        transform: translateY(0px);
+	opacity:1;
+}
+
+/* -- Footer copyright -- */
+.footer-copyright {
+	line-height:40px;
+}
+
+/* -- Footer Social -- */
+.footer-social {
+	text-align:right;
+}
+
+.footer-social li {
+	display:inline-block;
+	margin-left:10px;
+}
+
+.footer-social li a {
+	display:block;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:50%;
+	color:#FFF;
+	background-color:#EBEBEB;
+	-webkit-transition:0.2s opacity;
+	transition:0.2s opacity;
+}
+
+.footer-social li a.facebook {
+	background-color:#3b5998;
+}
+
+.footer-social li a.twitter {
+	background-color:#55acee;
+}
+
+.footer-social li a.google-plus {
+	background-color:#dd4b39;
+}
+
+.footer-social li a.instagram {
+	background-color:#e95950;
+}
+
+.footer-social li a.youtube {
+	background-color:#ff0000;
+}
+
+.footer-social li a.linkedin {
+	background-color:#007bb5;}
+
+ 
+  .media {
+            padding-left: 20px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background-color: #FFF;
+        }
+
+        .media-body {
+            padding-left: 50px;
+            padding-top: 10px;
+            
+        }
+
+
+        button {
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.7em 2.4em;
+  font-size: 18px;
+  background: transparent;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  color: royalblue;
+  z-index: 1;
+  font-family: inherit;
+  font-weight: 500;
+}
+
+button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 4px solid royalblue;
+}
+
+button span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: var(--lightgray);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all 0.3s;
+}
+
+button:hover span::before {
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: royalblue;
+}
+
+button:hover {
+  color: white;
+}
+
+button:active span::before {
+  background: #2751cd;
+}
+ </style>
+ </head>
+ <body style="background-color: rgb(255, 250, 250);">
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+ 
+
+ <nav class="navbar bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+ <div class="container-fluid">
+       <a class="navbar-brand" href="index.html">
+           <img src="./img/logo1.png" alt="Logo" width="60" height="60" class="d-inline-block align-text-top">
+         </a>
+     
+         <ul class="nav nav-underline" >
+           <li class="nav-item">
+             <a class="nav-link " aria-current="page" href="index.html">Home</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="contactus.html">contact Us</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link " href="motivation.html">Motivation</a>
+           </li>
+           
+         </ul>
+   </div>
+   
+ </nav>
+
+ <div class="media">
+  <img src="./img/puma.png" class="align-self-center mr-3" alt="..." height="300" width="400">
+  <div class="media-body">
+      <h1 style="color: rgb(10, 10, 10);"> PUMA Opens its Largest Flagship Store in West India</h1>
+      <p class="mb-0" style="color: rgb(10, 10, 10);">Keeping up with the high vibe of its location, PUMA’s swanky new Linking Road store is set to be a hub for all things fun, fashion, fitness, art, and expressive technology. The two-floor space has cutting-edge offerings and Instagrammable zones that beautifully echo Mumbai’s pace, thrill, and culture. 
+
+        Throughout the year, the Linking Road store will showcase PUMA’s limited-edition global collaborations for the city’s fashion-forward shoppers who love to stay up to date with elevated style trends. The immersive brand space also has dedicated sections with a premium feel to cater to the fitness and sporting needs of men, women, and children.
+      </p>
+      <br>
+    <div class="learnm">
+      <b>When:</b>
+      <p>JUN 17 2023</p>
+      <b>Where:</b>
+     
+      <a href="https://goo.gl/maps/XigyvX8hG2EpzMZaA">Mumbai,India</a>
+      <i class="fa-sharp fa-solid fa-location-dot fa-bounce fa-2xl"></i>
+      </div>
+      <br>
+      <button> Event Info
+        <span></span>
+      </button>
+  </div>
+</div>
+
+<hr>
+
+<div class="media">
+  <img src="./img/gateway_Main_Floor_List_Item.jpg" class="align-self-center mr-3" alt="..." height="300" width="400">
+  <div class="media-body">
+      <h1 style="color: rgb(10, 10, 10);"> Gateway’s First Trip Around the Sun</h1>
+      <p class="mb-0" style="color: rgb(10, 10, 10);">We cannot believe our newest attraction, Gateway: The Deep Space Launch Complex®, opened one year ago! To celebrate Gateway's first trip around the Sun, we are hosting a birthday party the weekend of June 17 - 18. Inside Gateway, starting at 11 AM, a DJ will be mixing live tunes and hosting trivia. Because we are also honoring the 40th anniversary of the first American woman in space this summer, trivia will include questions about the extensive history of women's roles in NASA's space program. Answer questions correctly for your chance to earn a commemorative pin!
+      </p>
+      <br>
+    <div class="learnm">
+      <b>When:</b>
+      <p>JUN 17, 2023 - JUN 18, 2023</p>
+     
+      <b>Where:</b>
+    
+      <a href="https://goo.gl/maps/VXLUFxbourFpFv8R8">GATEWAY: THE DEEP SPACE LAUNCH COMPLEX®</a>
+      <i class="fa-sharp fa-solid fa-location-dot fa-bounce fa-2xl"></i>
+
+      </div>
+      <br>
+      <button> Event Info
+        <span></span>
+      </button>
+  </div>
+</div>
+
+<hr>
+
+
+<div class="media">
+  <img src="./img/chalkart_background.jpg" class="align-self-center mr-3" alt="..." height="300" width="400">
+  <div class="media-body">
+      <h1 style="color: rgb(10, 10, 10);"> Women in Space Chalk Artists</h1>
+      <p class="mb-0" style="color: rgb(10, 10, 10);">During this summer's Celebration of Women in Space, the visitor complex is welcoming talented, local artists to create one-of-a-kind chalk art installations each Monday in July. The artists will be creating a unique piece that will pay homage to the important role women have in our space program. 
+
+        On Monday, July 3, the featured artists are Leigh Alfredson and Savannah Deutsch.
+      </p>
+      <br>
+    <div class="learnm">
+      <b>When:</b>
+      <p>JUL 03, 2023 - JUL 03, 2023</p>
+      <b>Where:</b>
+      
+      <a href="https://goo.gl/maps/5mRZQARqbKHnhwiX8">BEHIND RED ROCK GRILL</a>
+      <i class="fa-sharp fa-solid fa-location-dot fa-bounce fa-2xl"></i>
+    
+      </div>
+      <br>
+      <button> Event Info
+        <span></span>
+      </button>
+  </div>
+</div>
+
+<hr>
+
+
+<div class="media">
+  <img src="./img/nothinh.jpg" class="align-self-center mr-3" alt="..." height="300" width="400">
+  <div class="media-body">
+      <h1 style="color: rgb(10, 10, 10);"> Nothing Phone (2) coming in July: 10 things company confirmed before launch event</h1>
+      <p class="mb-0" style="color: rgb(10, 10, 10);">The Nothing Phone (2) will be announced in July this year. The company has just revealed the launch timeline and the exact date for the event is still unknown. But, Nothing has confirmed 10 things about the upcoming 5G phone.
+      </p>
+      <br>
+    <div class="learnm">
+      <b>When:</b>
+      <p>JULY 7 2023</p>
+      <b>Where:</b>
+      
+      <a href="https://goo.gl/maps/3ZFKCYNChaRbRBqR9">India</a>
+      
+      <i class="fa-sharp fa-solid fa-location-dot fa-bounce fa-2xl"></i>
+      </div>
+      <br>
+      <button> Event Info
+        <span></span>
+      </button>
+  </div>
+</div>
+
+<hr>
+
+
+<div class="media">
+  <img src="./img/samsung.webp" class="align-self-center mr-3" alt="..." height="300" width="400">
+  <div class="media-body">
+      <h1 style="color: rgb(10, 10, 10);">Samsung All Set To Commence The Galaxy Unpacked Event In July; Z Fold 5 and Z Flip 5 Expected To Arrive Soon</h1>
+      <p class="mb-0" style="color: rgb(10, 10, 10);">Samsung has officially announced that its highly anticipated Galaxy Unpacked event, typically held in August, will be taking place in July this year. The event serves as a platform for showcasing the company's cutting-edge hardware, and the upcoming Unpacked event will introduce new folding devices, potentially including the Z Fold 5 and Z Flip 5 smartphones. Furthermore, Samsung is expected to launch its next-generation smartwatch and tablet during the event. Notably, this will be the first-ever Unpacked event held in Seoul, the capital city of South Korea.
+      </p>
+      <br>
+    <div class="learnm">
+      <b>When:</b>
+      <p>Expected Soon</p>
+      <b>Where:</b>
+
+      
+      <a href="https://goo.gl/maps/JLoe5Xzuxnmm3cnN6">South Korea</a>
+      <i class="fa-sharp fa-solid fa-location-dot fa-bounce fa-2xl"></i>
+    
+      </div>
+      <br>
+      <button> Event Info
+        <span></span>
+      </button>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ 	<!-- Footer -->
+     <footer id="footer" class="section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- row -->
+            <div class="row">
+
+                <!-- footer logo -->
+                <div class="col-md-6">
+                    <div class="footer-logo">
+                        <a class="logo" href="index.html">
+                            <img src="./img/ost.png" alt="logo" height="500">
+                        </a>
+                    </div>
+                </div>
+                <!-- footer logo -->
+
+                <!-- footer nav -->
+                <div class="col-md-6">
+                    <ul class="footer-nav">
+                        <li><a href="index.html" style="color: #0c0a0c;">Home</a></li>
+                        <li><a href="contactus.html" style="color: #0c0a0c;">contact Us</a></li>
+                        <li><a href="motivation.html" style="color: #0c0a0c;">Motivation</a></li>
+                        
+                    </ul>
+                </div>
+                <!-- /footer nav -->
+
+            </div>
+            <!-- /row -->
+
+            <!-- row -->
+            <div id="bottom-footer" class="row">
+
+                
+
+            
+            </div>
+            <!-- row -->
+
+        </div>
+        <!-- /container -->
+
+    </footer>
+    <!-- /Footer -->
+</body>
+</html>
